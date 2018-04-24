@@ -10,7 +10,7 @@ public class CRCUtil {
      * @param massage 待生成校验码的字符串
      * @return CRC16校验码
      */
-    public static String getCRC(String massage) {
+    public static String getCrc(String massage) {
         int i, j, crc_reg, check;
         char[] msg = massage.toCharArray();
         crc_reg = 0xFFFF;
@@ -29,6 +29,6 @@ public class CRCUtil {
 
     public static void main(String[] args) {
         String msg ="QN=20160801085857223;ST=21;CN=1062;PW=123456;MN=A220582_0001;Flag=9;CP=&&RtdInterval=10&&";
-        System.out.println(getCRC(msg)); //e381
+        System.out.println(getCrc(msg)); //e381
     }
 }
