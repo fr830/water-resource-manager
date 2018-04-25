@@ -15,7 +15,7 @@ public class DataRegion {
     // 执行结果回应代码
     private ExecuteResultStatusCode exeRtn;
     // 请求应答结果
-    private ResponseStatusCode QnRtn;
+    private ResponseStatusCode qnRtn;
     // 监测时间,YYYYMMDDhhmmss
     private String dataTime;
     // 自动站监测数据具体数据字段bean,含xxx-Rtd(监测值)、xxx-Flag(监测数据标识)、
@@ -125,11 +125,11 @@ public class DataRegion {
     }
 
     public ResponseStatusCode getQnRtn() {
-        return QnRtn;
+        return qnRtn;
     }
 
     public void setQnRtn(ResponseStatusCode qnRtn) {
-        QnRtn = qnRtn;
+        qnRtn = qnRtn;
     }
 
     public String getDataTime() {
